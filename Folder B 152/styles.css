@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #2e3135;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+#game-wrapper {
+    display: flex;
+    background: #e7ecf5;
+    border: 4px solid #b0b7c6;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px #b0b7c6;
+}
+#game-area {
+    padding: 16px 0 16px 16px;
+}
+#sketch-holder canvas {
+    border: 4px solid #7c8db5;
+    background: #cfd8e8;
+    display: block;
+}
+#side-panel {
+    width: 180px;
+    background: #dbe5f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px 12px 12px;
+    border-left: 4px solid #b0b7c6;
+}
+#next-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+#next-piece {
+    background: #f8fafc;
+    border: 2px solid #b0b7c6;
+    margin-bottom: 16px;
+}
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    margin: 6px 0;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+}
+.info-label {
+    color: #4e5b7c;
+    font-weight: bold;
+}
+#score, #level, #lines {
+    font-weight: bold;
+    color: #1d2b4b;
+    font-size: 20px;
+}
+#side-buttons {
+    margin: 18px 0 10px 0;
+    display: flex;
+    gap: 10px;
+}
+#side-buttons button {
+    background: #e6ecf5;
+    border: 2px solid #b0b7c6;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-transform: lowercase;
+    padding: 4px 10px;
+    color: #4e5b7c;
+    cursor: pointer;
+    box-shadow: 1px 1px 0 #b0b7c6;
+    transition: background 0.2s;
+}
+#side-buttons button:hover {
+    background: #b0b7c6;
+    color: #fff;
+}
+#tetris-logo {
+    margin-top: 18px;
+    font-size: 32px;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #b0b7c6;
+    letter-spacing: 4px;
+    opacity: 0.7;
+    text-align: center;
+    user-select: none;
+}

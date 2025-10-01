@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+</head>
+<body>
+    <div id="game-wrapper">
+        <div id="game-area">
+            <div id="sketch-holder"></div>
+        </div>
+        <div id="side-panel">
+            <div id="next-label">Next</div>
+            <canvas id="next-piece" width="90" height="90"></canvas>
+            <div class="info-block">Level<span class="info-label"></span> <span id="level">1</span></div>
+            <div class="info-block">Lines<span class="info-label"></span> <span id="lines">0</span></div>
+            <div class="info-block">Score<span class="info-label"></span> <span id="score">0</span></div>
+            <div id="side-buttons">
+                <button id="quit">Quit</button>
+                <button id="pause">Pause</button>
+            </div>
+            <div id="tetris-logo">Tetris</div>
+        </div>
+    </div>
+    <script src="Tetris.js"></script>
+</body>
+</html>
