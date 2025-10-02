@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random User Generator</h1>
+        <div class="options">
+            <label for="nationality">Nationality</label>
+            <select id="nationality">
+                <option value="">Random</option>
+                <option value="br">Brazil</option>
+                <option value="us">USA</option>
+                <option value="gb">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="fr">France</option>
+            </select>
+        </div>
+        <div class="user-card">
+            <img id="user-image" src="Empty Profile Pic.png" alt="User Avatar">
+            <div class="user-info">
+                <h2 id="user-name">Name</h2>
+                <p id="user-email">Email</p>
+                <p id="user-location">Location</p>
+                <p id="user-phone">Phone Number</p>
+                <p id="user-age">Age: <span id="user-age-value"></span></p>
+                <p id="user-gender">Gender: <span id="user-gender-value"></span></p>
+                <p id="user-dob">Date of Birth: <span id="user-dob-value"></span></p>
+            </div>
+        </div>
+        <button id="generate-button">Generate new User</button>
+    </div>
+    <script src="User Generator.js"></script>
+</body>
+</html>
