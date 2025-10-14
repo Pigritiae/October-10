@@ -17,7 +17,8 @@ function searchPlanes() {
     });
     falseData.forEach(plane => {
         L.marker([plane.lat, plane.long])
-        .addto(map).bindPopup(`<strong>${plane.callsign}</strong><br>Origin: ${plane.country}`);
+        .addTo(map).bindPopup(`<strong>${plane.callsign}</strong><br>Origin: ${plane.country}`);
     });
 }
+
 window.onload = iniciateMap
