@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FIX: Removed 'height: 200vh' and 'overflow: hidden' to allow scrolling if needed */
+html,
+body {
+    min-height: 100vh; /* Use min-height to ensure full height but allow growth */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    padding-bottom: 50px; /* Added some padding to the bottom */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 1.1em;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    appearance: none;
+    /* Removed redundant background-image properties for a custom dropdown arrow;
+       These are often tricky without a specific SVG. Keeping it simple. */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: auto;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 1s ease;
+    margin: 30px auto;
+    display: block; /* Ensure it behaves like a block element for margin: auto */
+}
+
+/* Added position:fixed and top/left to ensure the expanded image is centered in the viewport */
+img.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) !important; /* Scale 1 to fit, translate to center */
+    width: 90vw !important; /* Take up 90% of viewport width */
+    height: 90vh !important; /* Take up 90% of viewport height */
+    object-fit: contain !important; /* Ensure image fits while maintaining aspect ratio */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    border-radius: 0;
+    box-shadow: none;
+    /* object-position is no longer necessary as it's centered */
+}
