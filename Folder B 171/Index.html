@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptocurrency in Real Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Criptocurrency in Real Time</h1>
+    <label for="crypto-id">Criptocurrency ID:</label>
+    <input type="text" id="crypto-id" placeholder="bitcoin">
+    <button id="fetch-data">Search Data</button>
+    <div id="crypto-info">
+        <h2 id="crypto-name"></h2>
+        <p>Current Price: <span id="current-price"></span></p>
+        <p>Price Change in the last 24H: <span id="price-change"></span></p>
+        <p>Market Cap <span id="market-cap"></span></p>
+        <p>Highest Value in the last 24H <span id="high-24h"></span></p>
+        <p>Lowest Value in the Last 24H <span id="low-24h"></span></p>
+        <p>Total Supply <span id="total-supply"></span></p>
+        <p>Circulating Supply <span id="circulating-supply"></span></p>
+    </div>
+    <script src="Crypto.js"></script>
+</body>
+</html>
