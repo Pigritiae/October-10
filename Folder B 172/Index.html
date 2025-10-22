@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Culture Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>General Culture Quiz</h1>
+        
+        <div id="quiz"> <div id="question">Loading question...</div>
+            <div id="answers"></div>
+            <button id="nextButton" disabled>Next Question</button>
+            <div id="score">Score: 0</div>
+        </div>
+        
+        <div id="endscreen" style="display: none;"> <h2>Game Over!</h2>
+            <p>Your Final Score: <span id="finalScore"></span></p>
+            <label for="playerName">Type Your Name:</label>
+            <input type="text" id="playerName">
+            <button id="saveScoreButton">Save Score</button>  
+        </div>
+
+        <h2>Local Ranking</h2>
+        <ol id="ranking"></ol>
+        
+    </div>
+    <script src="Culture Quiz.js"></script>
+</body>
+</html>
