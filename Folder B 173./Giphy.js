@@ -120,4 +120,5 @@ function loadGifs() {
         }
     });
 }
-/* Códigos corrigidos pela IA Gemini. Chave API vazia pela criação de contas no site estiver inacessível no momento de criação */ 
+
+/* Códigos corrigidos pela IA Gemini. */  
