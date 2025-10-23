@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="category-container">
+    <h1>GIF Searcher</h1>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Enter a Search Term...">
+        <button id="search-button">Search</button>
+    </div>
+    <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="">All</option>
+            <option value="reactions">Reactions</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="sports">Sports</option>
+            <option value="stickers">Stickers</option>
+        </select>
+    </div>
+    <div id="filter-container">
+        <label for="rating-select">Rating:</label>
+        <select id="rating-select">
+            <option value="">All</option>
+            <option value="g">G</option>
+            <option value="pg">PG</option>
+            <option value="pg-13">PG-13</option>
+            <option value="r">R</option>
+        </select>
+    </div>
+    <div id="gif-container">
+    </div>
+    <button id="load-more-button">Load More</button>
+    <script src="Giphy.js"></script>
+</body>
+</html>
