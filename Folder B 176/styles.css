@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+}
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 2px solid #00796b;
+    border-bottom: 2px solid #00796b;
+    padding: 10px 0;
+}
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll left 20s linear infinite;
+    font-size: 1.2em;
+    color: #00796b;
+    padding-left: 100%;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
