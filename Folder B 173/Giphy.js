@@ -6,7 +6,7 @@ const gifContainer = document.getElementById('gif-container');
 const loadMoreButton = document.getElementById('load-more-button');
 
 
-const apiKey = 'YOUR_GIPHY_API_KEY'; 
+const apiKey = 'VtHH6Wc7ZVmKZtXQQPtCFzvBysfZlnHC'; 
 const limit = 10;
 let offset = 0;
 
@@ -120,4 +120,5 @@ function loadGifs() {
         }
     });
 }
+
 /* Códigos corrigidos pela IA Gemini. Chave API vazia pela criação de contas no site estiver inacessível no momento de criação */ 
