@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="tel"],
+form input[type="color"] { /* Added color input here for consistent styling */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form input[type="color"] {
+    /* Adjusted height for consistency, removed margin-top as it's included above */
+    height: 40px; 
+}
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 1.1em;
+}
+
+/* Card Styling for the Output Page (Card.php) */
+.card {
+    /* Increased width for a more realistic calling/business card size */
+    width: 350px; 
+    /* Removed min-height as content will determine height */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto; /* Centered the card */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+.card p {
+    margin: 5px 0;
+    /* Removed fixed color to allow PHP-set color to stand out, kept for phone */
+    color: #333; 
+}
+.card .line {
+    height: 5px;
+    margin: 10px auto 20px auto; /* Centered the line */
+    width: 50%; /* Make the line shorter for an accent effect */
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calling Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Own Calling Card</h1>
+        <form action="Card.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="occupation">Occupation/Title:</label>
+            <input type="text" id="occupation" name="occupation" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="color">Main Color (Hex):</label>
+            <input type="color" id="color" name="color" value="#007bff">
+
+            <button type="submit">Generate Card</button>
+        </form>
+    </div>
+</body>
+</html>
