@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    padding: 28px 32px;
+    box-sizing: border-box;
+}
+.container h1 {
+    margin: 0 0 16px 0;
+    font-size: 28px;
+    text-align: center;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.container label {
+    font-size: 14px;
+    font-weight: bold; /* Added for clarity */
+}
+
+/* CORRECTION: Separate styling for text/password inputs */
+.container input[type="text"],
+.container input[type="password"] {
+    padding: 10px 12px;
+    background: #fff; /* Changed background to white */
+    color: #333; /* Changed text color to dark */
+    border: 1px solid #ccc; /* Added border */
+    border-radius: 4px;
+    font-size: 15px;
+    /* Removed cursor: pointer; */
+}
+
+/* New: Styling for the submit button */
+.container button[type="submit"] {
+    padding: 10px 12px;
+    background: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+.container button[type="submit"]:hover {
+    background: #005fa3;
+}
+.error-msg {
+    color: #c62828;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px; /* Added spacing */
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .container h1 { font-size: 22px;}
+}
+.secret {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 28px;
+    border: 2px solid #c3ebcb;
+    border-radius: 8px;
+    text-align: center;
+}
+.container.wide {
+    max-width: 720px;
+}
