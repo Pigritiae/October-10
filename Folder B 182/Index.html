@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Favorite Takeout Food?</h1>
+        <p>Vote for One of the Options Below and See the Scoreboard Update</p>
+        <form action="Vote.php" method="POST">
+            <label>
+                <input type="radio" name="option" value="Pizza" required>Pizza
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="option" value="Burgers" required>Burgers
+            </label>
+            <br>
+            <button type="submit">VOTE</button>
+        </form>
+    </div>
+</body>
+</html>
